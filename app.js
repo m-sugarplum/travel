@@ -15,8 +15,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/destinations', (req, res) => {
-    const places = destinationsMexico
-    res.render('destinations.ejs', { places })
+    const destinations = destinationsMexico;
+    const listOfPlaces = Object.keys(destinationsMexico);
+    const numOfPlaces = listOfPlaces.length;
+    console.log(numOfPlaces)
+    // console.log(places.Cancun.img)
+    res.render('destinations.ejs', { destinations, listOfPlaces, numOfPlaces });
 })
 
 app.get('/destinations/:name', (req, res) => {
@@ -24,6 +28,6 @@ app.get('/destinations/:name', (req, res) => {
     const data = destinationsMexico[name];
     res.render('details.ejs', { data, name })
 })
-app.listen(3000, () => {
-    console.log("ON PORT 3000!")
+app.listen(8080, () => {
+    console.log("ON PORT 8080!")
 })

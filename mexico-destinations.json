@@ -1,58 +1,58 @@
 {
-    "San Cristóbal de las Casas": {
+    "SanCristobal": {
         "city": "San Cristóbal de las Casas",
         "state": "Chiapas",
         "description": "Description for San Cristobal comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1603306604810-22ecdf5c6228?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
         "id": 1
     },
-    "Parque Nacional Lagunas de Montebello": {
+    "Montebello": {
         "city": "Comitán",
         "state": "Chiapas",
         "description": "Description for Lagunas de Montebello comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1554296109-fb7a6c8af84c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "id": 2
     },
-    "Lagos de Colón": {
-        "city": "Comitan",
+    "LagosdeColon": {
+        "city": "Lagos de Colon",
         "state": "Chiapas",
         "description": "Description for Lagos de Colon comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
         "id": 3
     },
-    "Cascada El Chiflón": {
+    "Chiflon": {
         "city": "San Vicente La Mesilla",
         "state": "Chiapas",
         "description": "Description for Cascada El Chiflon comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1554296109-fb7a6c8af84c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
         "id": 4
     },
-    "Pre-Hispanic City and National Park of Palenque": {
+    "Palenque": {
         "city": "Palenque",
         "state": "Chiapas",
         "description": "Description for Palenque comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1583684894818-b85e49a78a62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
         "id": 5
     },
-    "La Selva Lacandona (The Lacandon Jungle)": {
+    "Lacandon": {
         "city": "Montes Azules Biosphere Reserve",
         "state": "Chiapas",
         "description": "Description for la Selva Lacandona comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1570108691072-d03b433fc8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
         "id": 6
     },
-    "Cancún": {
+    "Cancun": {
         "city": "Cancún",
         "state": "Quintana Roo",
         "description": "Description for Cancun comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1515823665507-1b98e804640d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bWV4aWNvJTIwY2FuY3VufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60",
         "id": 7
     },
-    "Mazatlán": {
+    "Mazatlan": {
         "city": "Mazatlán",
         "state": "Sinaloa",
         "description": "Description for Mazatlan comes here",
-        "img": "",
+        "img": "https://images.unsplash.com/photo-1519837242121-561f79e8e7e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
         "id": 8
     }
 }

@@ -5,6 +5,10 @@ body {
     color: #e6d5b5;
 }
 
+img {
+    width: 25%;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -27,10 +31,6 @@ ul {
     justify-content: space-between;
 }
 
-.mexico-list {
-    /* display: flex; */
-    flex-direction: column;
-}
 
 a {
     display: flex;
