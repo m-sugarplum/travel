@@ -5,10 +5,6 @@ body {
     color: #e6d5b5;
 }
 
-img {
-    width: 25%;
-}
-
 nav {
     display: flex;
     flex-direction: row;

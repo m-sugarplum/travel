@@ -18,7 +18,7 @@ app.get('/destinations', (req, res) => {
     const destinations = destinationsMexico;
     const listOfPlaces = Object.keys(destinationsMexico);
     const numOfPlaces = listOfPlaces.length;
-    console.log(numOfPlaces)
+
     // console.log(places.Cancun.img)
     res.render('destinations.ejs', { destinations, listOfPlaces, numOfPlaces });
 })
