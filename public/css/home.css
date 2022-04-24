@@ -34,8 +34,9 @@ a {
     flex-grow: 1;
     justify-content: end;
     color: #ddb771;
-    font-family: 'Grape Nuts', cursive;
-    font-size: 3em;
+    font-family: 'Share', cursive;
+    font-weight: 700;
+    font-size: 2em;
 }
 
 a:hover {
