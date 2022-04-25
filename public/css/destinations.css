@@ -3,14 +3,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #031514;
-    color: #e6d5b5;
+
 }
 
 nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(5, 30, 2);
+    background-color: #E09F3E;
     height: 5%;
     padding: 0% 5%;
 
@@ -29,53 +29,50 @@ ul {
     justify-content: space-between;
 }
 
-
 a {
     display: flex;
     text-decoration: none;
     flex-grow: 1;
     justify-content: end;
-    color: #e6d5b5;
+    color: rgba(3, 19, 10);
     font-family: 'Share', cursive;
     font-weight: 700;
     font-size: 2em;
 }
 
 a:hover {
-    color: #e2a027;
-    text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
+    color: #FFF3B0;
+    text-shadow: #540b0dc7 1px 0 10px;
 }
 
 h1 {
     font-family: 'Bungee Inline', cursive;
     font-size: 5rem;
-    color: #e2a027;
+    color: #E09F3E;
     border: 1px solid;
     border-style: none none solid none;
 }
 
 h3 {
-    color: #e2a027;
+    color: #E09F3E;
     font-family: 'Vibur', cursive;
     font-size: 2rem;
 }
 
 h3:hover {
-    color: #e6d5b5;
+    color: #FFF3B0;
 
     text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
 }
 
 .container {
-    background-color: rgba(3, 19, 1, 0.81);
+    background-color: #540b0dc2;
 
 }
 
 @media screen and (orientation: landscape) {
     body {
         background-position: top;
-        background-image: url("https://images.unsplash.com/photo-1612462697874-fcec03973311?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+        background-image: url("https://images.unsplash.com/photo-1541225640048-a30ee9bb3180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
     }
-
-
 }

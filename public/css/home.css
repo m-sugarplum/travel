@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #073b3a;
+    background-color: #335C67;
     height: 5%;
     padding: 0% 5%;
 }
@@ -33,7 +33,7 @@ a {
     text-decoration: none;
     flex-grow: 1;
     justify-content: end;
-    color: #ddb771;
+    color: #FFF3B0;
     font-family: 'Share', cursive;
     font-weight: 700;
     font-size: 2em;
@@ -47,6 +47,7 @@ a:hover {
 h1 {
     font-family: 'Grape Nuts', cursive;
     font-size: 5em;
+    color: #540B0E;
 }
 
 blockquote {
@@ -59,7 +60,7 @@ blockquote {
 
 .intro {
     min-height: 150px;
-    background-color: rgb(255, 228, 196, 0.5);
+    background-color: #fff3b0c1;
     margin-top: 20%;
 }
 
@@ -70,7 +71,7 @@ blockquote {
 
     .intro {
         margin-top: 10%;
-        background-color: rgb(255, 228, 196, 0.7);
+        background-color: #e09f3edb;
     }
 }
 
