@@ -30,40 +30,46 @@
         <a class="p-2 p-md-3" href="#">About Me</a>
     </nav>
     <div class="container text-center">
-        <h1 class="text-center pt-5 pb-3">Add new destination</h1>
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-xl-8">
-                <div class="input-group input-group-lg mb-3 pt-3">
-                    <span class="input-group-text " id="basic-addon1">Place to visit</span>
-                    <input type="text" class="form-control" placeholder="Cascada El Chiflon" aria-label="Place to visit"
-                        aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="col-md-10 col-xl-8">
-                <div class="input-group input-group-lg pt-3">
-                    <span class="input-group-text">Closest city and state</span>
-                    <input type="text" aria-label="Closest city" class="form-control"
-                        placeholder="San Vicente La Mesilla">
-                    <input type="text" aria-label="State" class="form-control" placeholder="Chiapas">
-                </div>
-            </div>
-            <div class="col-md-10 col-xl-8">
-                <div class="input-group input-group-lg pt-3">
-                    <span class="input-group-text">Description</span>
-                    <textarea class="form-control" aria-label="With textarea"></textarea>
-                </div>
-            </div>
-            <div class="col-md-10 col-xl-8 mb-3">
-                <div class="input-group input-group-lg mb-3 pt-3">
-                    <span class="input-group-text " id="basic-addon1">Image URL</span>
-                    <input type="text" class="form-control" placeholder="https://images.unsplash.com/photo-15448"
-                        aria-label="Place to visit" aria-describedby="basic-addon1">
-                </div>
-            </div>
-        </div>
+        <form action="">
+            <h1 class="text-center pt-5 pb-3">Add new destination</h1>
 
+            <div class="row justify-content-md-center">
+                <div class="col-md-10 col-xl-8">
+                    <div class="input-group input-group-lg mb-3 pt-3">
+                        <span class="input-group-text " id="basic-addon1">Place to visit</span>
+                        <input type="text" class="form-control" placeholder="Cascada El Chiflon"
+                            aria-label="Place to visit" aria-describedby="basic-addon1" name="place">
+                    </div>
+                </div>
+                <div class="col-md-10 col-xl-8">
+                    <div class="input-group input-group-lg pt-3">
+                        <span class="input-group-text">Closest city and state</span>
+                        <input type="text" aria-label="Closest city" class="form-control"
+                            placeholder="San Vicente La Mesilla" name="city">
+                        <input type="text" aria-label="State" class="form-control" placeholder="Chiapas" name="state">
+                    </div>
+                </div>
+                <div class="col-md-10 col-xl-8">
+                    <div class="input-group input-group-lg pt-3">
+                        <span class="input-group-text">Description</span>
+                        <textarea class="form-control" aria-label="With textarea" name="description"></textarea>
+                    </div>
+                </div>
+                <div class="col-md-10 col-xl-8 mb-3">
+                    <div class="input-group input-group-lg mb-3 pt-3">
+                        <span class="input-group-text " id="basic-addon1">Image URL</span>
+                        <input type="text" class="form-control" placeholder="https://images.unsplash.com/photo-15448"
+                            aria-label="Place to visit" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <button type="submit" class="btn btn-secondary btn-lg m-3 col-6 col-md-3">Let's save it!</button>
 
-
+                </div>
+            </div>
+        </form>
     </div>
 
 </body>
