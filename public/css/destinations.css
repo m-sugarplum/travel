@@ -10,7 +10,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: #E09F3E;
+    background-color: #FFCB69;
     height: 5%;
     padding: 0% 5%;
 
@@ -34,39 +34,39 @@ a {
     text-decoration: none;
     flex-grow: 1;
     justify-content: end;
-    color: rgba(3, 19, 10);
+    color: #797D62;
     font-family: 'Share', cursive;
     font-weight: 700;
     font-size: 2em;
 }
 
 a:hover {
-    color: #FFF3B0;
-    text-shadow: #540b0dc7 1px 0 10px;
+    color: #D08C60;
+    text-shadow: #F1DCA7 2px 0 10px;
 }
 
 h1 {
     font-family: 'Bungee Inline', cursive;
     font-size: 5rem;
-    color: #E09F3E;
+    color: #FFF3B0;
     border: 1px solid;
     border-style: none none solid none;
 }
 
 h3 {
-    color: #E09F3E;
+    color: #FFF3B0;
     font-family: 'Vibur', cursive;
     font-size: 2rem;
 }
 
 h3:hover {
-    color: #FFF3B0;
+    color: whitesmoke;
 
     text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
 }
 
 .container {
-    background-color: #540b0dc2;
+    background-color: #997b66da;
 
 }
 
@@ -74,5 +74,53 @@ h3:hover {
     body {
         background-position: top;
         background-image: url("https://images.unsplash.com/photo-1541225640048-a30ee9bb3180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+    }
+
+    h3 {
+        color: #FFF3B0;
+        font-family: 'Vibur', cursive;
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+
+    nav,
+    ul {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        height: 10%;
+    }
+}
+
+;
+
+@media (min-width: 769px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    a {
+        font-size: 1.8rem;
+    }
+}
+
+@media (min-width: 1025px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    a {
+        font-size: 2.2rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    h1 {
+        font-size: 5rem;
     }
 }

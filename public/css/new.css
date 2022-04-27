@@ -37,7 +37,7 @@ a {
     color: #797D62;
     font-family: 'Share', cursive;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 2em;
 }
 
 a:hover {
@@ -82,13 +82,17 @@ input::placeholder {
     }
 }
 
-@media (min-width: 769px) {
-    h1 {
-        font-size: 3rem;
+@media (max-width: 576px) {
+
+    nav,
+    ul {
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
     }
 
-    a {
-        font-size: 1.8rem;
+    nav {
+        height: 10%;
     }
 }
 
