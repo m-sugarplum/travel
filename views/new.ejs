@@ -30,15 +30,15 @@
         <a class="p-2 p-md-3" href="#">About Me</a>
     </nav>
     <div class="container text-center">
-        <form action="">
+        <form action="/mexico" method="post">
             <h1 class="text-center pt-5 pb-3">Add new destination</h1>
 
             <div class="row justify-content-md-center">
                 <div class="col-md-10 col-xl-8">
                     <div class="input-group input-group-lg mb-3 pt-3">
                         <span class="input-group-text " id="basic-addon1">Place to visit</span>
-                        <input type="text" class="form-control" placeholder="Cascada El Chiflon"
-                            aria-label="Place to visit" aria-describedby="basic-addon1" name="place">
+                        <input type="text" class="form-control text-reset" placeholder="Cascada El Chiflon"
+                            aria-label="Place to visit" aria-describedby="basic-addon1" name="placeName">
                     </div>
                 </div>
                 <div class="col-md-10 col-xl-8">
@@ -59,13 +59,13 @@
                     <div class="input-group input-group-lg mb-3 pt-3">
                         <span class="input-group-text " id="basic-addon1">Image URL</span>
                         <input type="text" class="form-control" placeholder="https://images.unsplash.com/photo-15448"
-                            aria-label="Place to visit" aria-describedby="basic-addon1">
+                            aria-label="Place to visit" aria-describedby="basic-addon1" name="img">
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col">
-                    <button type="submit" class="btn btn-secondary btn-lg m-3 col-6 col-md-3">Let's save it!</button>
+                    <button class="btn btn-secondary btn-lg m-3 col-6 col-md-3">Let's save it!</button>
 
                 </div>
             </div>

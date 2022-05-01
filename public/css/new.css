@@ -45,6 +45,12 @@ a:hover {
     text-shadow: #997B66 1px 0 10px;
 }
 
+::placeholder {
+    color: blue;
+    font-size: 1.5em;
+}
+
+
 h1 {
     font-family: 'Bungee Inline', cursive;
     font-size: 2rem;
