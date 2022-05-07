@@ -1,83 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Travel Destinations</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Caveat+Brush&family=Damion&family=Grand+Hotel&family=Ma+Shan+Zheng&family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Short+Stack&family=Vibur&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/destinations.css">
-    <script src="/js/bootstrap.min.js"></script>
-</head>
+    <body class="body-destinations">
+        <%- include('partials/navbar.ejs') %>
+            <div class="container text-center container-destinations">
+                <h1 class="text-center pt-5 pb-3 h1-destinations">Mexico</h1>
 
-<body>
-    <nav class="sticky-top mb-5">
-        <ul>
-            <li>
-                <a class="p-1 p-md-3" href="">Home</a>
-            </li>
-            <li>
-                <a class="p-1 p-md-3" href="">Destinations</a>
-            </li>
-        </ul>
-
-        <a class="p-1 p-md-3" href="#">About Me</a>
-    </nav>
-    <div class="container text-center">
-        <h1 class="text-center pt-5 pb-3">Mexico</h1>
-
-        <% let length=numOfPlaces %>
+                <% let length=numOfPlaces %>
 
 
-            <% for (let i=1; i < length+1; i++) { %>
-                <% let place=(listOfPlaces[i-1])%>
+                    <% for (let i=1; i < length+1; i++) { %>
+                        <% let place=(listOfPlaces[i-1])%>
 
-                    <% if (i==1) { %>
+                            <% if (i==1) { %>
 
-                        <div class="row justify-content-center pt-5">
-                            <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
+                                <div class="row justify-content-center pt-5">
+                                    <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
 
-                                <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
-                                <h3>
-                                    <%=placesMexico[place].placeName%>
-                                </h3>
-                            </div>
+                                        <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
+                                        <h3 class="h3-destinations">
+                                            <%=placesMexico[place].placeName%>
+                                        </h3>
+                                    </div>
 
-                            <% } else if (i%2==0 && i !==1) { %>
-                                <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
+                                    <% } else if (i%2==0 && i !==1) { %>
+                                        <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
 
-                                    <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
+                                            <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
 
-                                    <h3>
-                                        <%=placesMexico[place].placeName%>
-                                    </h3>
+                                            <h3 class="h3-destinations">
+                                                <%=placesMexico[place].placeName%>
+                                            </h3>
+
+                                        </div>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <% } else if (i%2!==0 && i !==1) {%>
+                                        <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
+
+                                            <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
+                                            <h3 class="h3-destinations">
+                                                <%=placesMexico[place].placeName%>
+                                            </h3>
+                                        </div>
+
+                                        <%} else { %>
+                                            console.log ("Error with looping - img display")
+                                            <% } %>
+                                                <%} %>
 
                                 </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <% } else if (i%2!==0 && i !==1) {%>
-                                <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
+            </div>
 
-                                    <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
-                                    <h3>
-                                        <%=placesMexico[place].placeName%>
-                                    </h3>
-                                </div>
+    </body>
 
-                                <%} else { %>
-                                    console.log ("Error with looping - img display")
-                                    <% } %>
-                                        <%} %>
-
-                        </div>
-    </div>
-
-</body>
-
-</html>
+    </html>

@@ -3,11 +3,9 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 const placesMexico = require('./placesMexico.json');
-console.log(placesMexico);
 
 let listOfPlaces = Object.keys(placesMexico);
 let numOfPlaces = listOfPlaces.length;
-
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
@@ -24,7 +22,6 @@ app.get('/', (req, res) => {
 
 
 app.get('/mexico', (req, res) => {
-
     res.render('destinations.ejs', { placesMexico, listOfPlaces, numOfPlaces });
 })
 
@@ -54,6 +51,7 @@ app.get('/destinations-mexico/:name', (req, res) => {
     const data = destinationsMexico[name];
     res.render('details.ejs', { data, name })
 })
+
 
 app.listen(8080, () => {
     console.log("ON PORT 8080!")

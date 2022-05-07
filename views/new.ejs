@@ -1,77 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<%- include('partials/head.ejs') %>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>New Destination</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Caveat+Brush&family=Damion&family=Grand+Hotel&family=Ma+Shan+Zheng&family=Share:ital,wght@0,400;0,700;1,400;1,700&family=Short+Stack&family=Vibur&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/new.css">
-    <script src="/js/bootstrap.min.js"></script>
-</head>
+    <body class="body-new">
+        <%- include('partials/navbar.ejs') %>
 
-<body>
-    <nav class="mb-5">
-        <ul>
-            <li>
-                <a class="p-1 p-md-3" href="">Home</a>
-            </li>
-            <li>
-                <a class="p-1 p-md-3" href="">Destinations</a>
-            </li>
-        </ul>
+            <div class="container text-center container-new">
+                <form action="/mexico" method="post">
+                    <h1 class="text-center pt-5 pb-3 h1-new">Add new destination</h1>
 
-        <a class="p-2 p-md-3" href="#">About Me</a>
-    </nav>
-    <div class="container text-center">
-        <form action="/mexico" method="post">
-            <h1 class="text-center pt-5 pb-3">Add new destination</h1>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-10 col-xl-8">
+                            <div class="input-group input-group-lg mb-3 pt-3">
+                                <span class="input-group-text " id="basic-addon1">Place to visit</span>
+                                <input type="text" class="form-control text-reset" placeholder="Cascada El Chiflon"
+                                    aria-label="Place to visit" aria-describedby="basic-addon1" name="placeName">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-xl-8">
+                            <div class="input-group input-group-lg pt-3">
+                                <span class="input-group-text">Closest city and state</span>
+                                <input type="text" aria-label="Closest city" class="form-control"
+                                    placeholder="San Vicente La Mesilla" name="city">
+                                <input type="text" aria-label="State" class="form-control" placeholder="Chiapas"
+                                    name="state">
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-xl-8">
+                            <div class="input-group input-group-lg pt-3">
+                                <span class="input-group-text">Description</span>
+                                <textarea class="form-control" aria-label="With textarea" name="description"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-10 col-xl-8 mb-3">
+                            <div class="input-group input-group-lg mb-3 pt-3">
+                                <span class="input-group-text " id="basic-addon1">Image URL</span>
+                                <input type="text" class="form-control"
+                                    placeholder="https://images.unsplash.com/photo-15448" aria-label="Place to visit"
+                                    aria-describedby="basic-addon1" name="img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col">
+                            <button class="btn btn-secondary btn-lg m-3 col-6 col-md-3">Let's save it!</button>
 
-            <div class="row justify-content-md-center">
-                <div class="col-md-10 col-xl-8">
-                    <div class="input-group input-group-lg mb-3 pt-3">
-                        <span class="input-group-text " id="basic-addon1">Place to visit</span>
-                        <input type="text" class="form-control text-reset" placeholder="Cascada El Chiflon"
-                            aria-label="Place to visit" aria-describedby="basic-addon1" name="placeName">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-10 col-xl-8">
-                    <div class="input-group input-group-lg pt-3">
-                        <span class="input-group-text">Closest city and state</span>
-                        <input type="text" aria-label="Closest city" class="form-control"
-                            placeholder="San Vicente La Mesilla" name="city">
-                        <input type="text" aria-label="State" class="form-control" placeholder="Chiapas" name="state">
-                    </div>
-                </div>
-                <div class="col-md-10 col-xl-8">
-                    <div class="input-group input-group-lg pt-3">
-                        <span class="input-group-text">Description</span>
-                        <textarea class="form-control" aria-label="With textarea" name="description"></textarea>
-                    </div>
-                </div>
-                <div class="col-md-10 col-xl-8 mb-3">
-                    <div class="input-group input-group-lg mb-3 pt-3">
-                        <span class="input-group-text " id="basic-addon1">Image URL</span>
-                        <input type="text" class="form-control" placeholder="https://images.unsplash.com/photo-15448"
-                            aria-label="Place to visit" aria-describedby="basic-addon1" name="img">
-                    </div>
-                </div>
+                </form>
             </div>
-            <div class="row justify-content-center">
-                <div class="col">
-                    <button class="btn btn-secondary btn-lg m-3 col-6 col-md-3">Let's save it!</button>
 
-                </div>
-            </div>
-        </form>
-    </div>
+    </body>
 
-</body>
-
-</html>
+    </html>
