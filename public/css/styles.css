@@ -1,7 +1,6 @@
 body {
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 .body-new {
@@ -16,7 +15,7 @@ body {
 
 .body-home {
     background-image: url("https://images.unsplash.com/photo-1646970285128-3b34086896f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80");
-    background-color: #e6d5b5;
+    background-color: #fff3b0c1;
 }
 
 nav {
