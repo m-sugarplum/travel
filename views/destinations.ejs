@@ -17,9 +17,9 @@
                                     <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
 
                                         <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
-                                        <h3 class="h3-destinations">
+                                        <a href="/" class="a-destinations justify-content-center">
                                             <%=placesMexico[place].placeName%>
-                                        </h3>
+                                        </a>
                                     </div>
 
                                     <% } else if (i%2==0 && i !==1) { %>
@@ -27,9 +27,9 @@
 
                                             <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
 
-                                            <h3 class="h3-destinations">
+                                            <a href="/" class="a-destinations justify-content-center">
                                                 <%=placesMexico[place].placeName%>
-                                            </h3>
+                                            </a>
 
                                         </div>
                                 </div>
@@ -38,17 +38,18 @@
                                         <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
 
                                             <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
-                                            <h3 class="h3-destinations">
+                                            <a href="/" class="a-destinations justify-content-center">
                                                 <%=placesMexico[place].placeName%>
-                                            </h3>
+                                            </a>
                                         </div>
 
                                         <%} else { %>
                                             console.log ("Error with looping - img display")
                                             <% } %>
                                                 <%} %>
-
+                                                    <a href="/mexico" class="justify-content-center m-3">Go to Top</a>
                                 </div>
+
             </div>
 
     </body>

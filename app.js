@@ -27,7 +27,6 @@ app.get('/mexico', (req, res) => {
 
 
 app.post('/mexico', (req, res) => {
-    res.send("IT WORKED!");
     const dataId = (numOfPlaces + 1).toString();
     placesMexico[dataId] = req.body;
     fs.writeFile('placesMexico.json', JSON.stringify(placesMexico), err => {
@@ -38,6 +37,7 @@ app.post('/mexico', (req, res) => {
     })
     numOfPlaces += 1;
     console.log(placesMexico, numOfPlaces);
+    res.redirect('/mexico');
 })
 
 
