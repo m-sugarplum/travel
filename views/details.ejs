@@ -4,9 +4,13 @@
         <%- include('partials/navbar.ejs') %>
 
             <div class="container">
-                <h1 class="text-center m-5 h1-details">Details <%= name%>
+                <h1 class="text-center m-5 h1-details">
+                    <%=data.placeName%>
                 </h1>
                 <hr>
+                <h3>
+                    Closest city: <%= data.city%>
+                </h3>
                 <h3>
                     State: <%= data.state%>
                 </h3>
@@ -16,7 +20,7 @@
                 </h3>
 
                 <% if (data.img) { %>
-                    <img src="data.img" alt="">
+                    <img src="<%=data.img%>" alt="">
 
                     <%}%>
 

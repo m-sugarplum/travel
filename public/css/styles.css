@@ -18,6 +18,11 @@ body {
     background-color: #fff3b0c1;
 }
 
+.body-details {
+
+    background-color: #092417c1;
+}
+
 nav {
     display: flex;
     flex-direction: row;

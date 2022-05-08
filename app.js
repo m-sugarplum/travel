@@ -46,10 +46,10 @@ app.get('/mexico/new', (req, res) => {
 })
 
 
-app.get('/destinations-mexico/:name', (req, res) => {
-    const { name } = req.params;
-    const data = destinationsMexico[name];
-    res.render('details.ejs', { data, name })
+app.get('/mexico/:id', (req, res) => {
+    const { id } = req.params;
+    data = placesMexico[id];
+    res.render('details.ejs', { data });
 })
 
 
