@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 const fs = require('fs');
-const placesMexico = require('./placesMexico.json');
+let placesMexico = require('./placesMexico.json');
 
 let listOfPlaces = Object.keys(placesMexico);
 let numOfPlaces = listOfPlaces.length;
@@ -12,33 +12,36 @@ app.set('views', path.join(__dirname, '/views'));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 
 app.get('/', (req, res) => {
     res.render('home.ejs')
-    console.log()
 })
 
 
 app.get('/mexico', (req, res) => {
-    res.render('destinations.ejs', { placesMexico, listOfPlaces, numOfPlaces });
+    res.render('destinations.ejs', {
+        placesMexico,
+        listOfPlaces,
+        numOfPlaces
+    });
 })
 
 
-app.post('/mexico', (req, res) => {
+app.post('/', (req, res) => {
     const dataId = (numOfPlaces + 1).toString();
     placesMexico[dataId] = req.body;
-    fs.writeFile('placesMexico.json', JSON.stringify(placesMexico), err => {
+    fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
         if (err) {
             console.error(err)
             return
         }
     })
-    numOfPlaces += 1;
-    console.log(placesMexico, numOfPlaces);
-    res.redirect('/mexico');
+    placesMexico = fs.readFileSync('./placesMexico.json');
+    res.render('home.ejs');
 })
+
 
 
 app.get('/mexico/new', (req, res) => {

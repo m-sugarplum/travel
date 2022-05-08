@@ -4,13 +4,15 @@
         <%- include('partials/navbar.ejs') %>
             <div class="container text-center container-destinations">
                 <h1 class="text-center pt-5 pb-3 h1-destinations">Mexico</h1>
+                <a href="/mexico/new" class="justify-content-center">Add New Place</a>
+
 
                 <% let length=numOfPlaces %>
 
 
+
                     <% for (let i=1; i < length+1; i++) { %>
                         <% let place=(listOfPlaces[i-1])%>
-
                             <% if (i==1) { %>
 
                                 <div class="row justify-content-center pt-5">
@@ -36,7 +38,6 @@
                                 <div class="row justify-content-center">
                                     <% } else if (i%2!==0 && i !==1) {%>
                                         <div class="col-xs-12 col-lg-6 col-xl-4 pb-5">
-
                                             <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">
                                             <a href="/mexico/<%=i%>" class="a-destinations justify-content-center">
                                                 <%=placesMexico[place].placeName%>
@@ -47,11 +48,13 @@
                                             console.log ("Error with looping - img display")
                                             <% } %>
                                                 <%} %>
+                                                    <div class="row justify-content-center">
+                                                        <button type="button"
+                                                            class="btn btn-lg btn-outline-warning col-4 col-md-2 m-3  btn-scroll-up">
+                                                            Back to Top
+                                                        </button>
+                                                    </div>
 
-                                                    <button type="button"
-                                                        class="btn btn-lg btn-outline-warning col-4 col-md-2 m-3 btn-scroll-up">
-                                                        Back to Top
-                                                    </button>
                                 </div>
 
             </div>
