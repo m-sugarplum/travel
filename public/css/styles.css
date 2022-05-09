@@ -19,8 +19,20 @@ body {
 }
 
 .body-details {
+    background-color: #FFF3B096;
+}
 
-    background-color: #092417c1;
+/* .location-tag {
+    font-size: 6em;
+} */
+
+.jumbotron {
+    background-color: #1b1e18;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-image: url("https://images.unsplash.com/photo-1518965539400-77d851d65c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    height: 35em;
 }
 
 nav {
@@ -62,6 +74,14 @@ a:hover {
     text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
 }
 
+.location-svg {
+    transform: scale(2.0);
+}
+
+.location-text {
+    font-family: 'Grape Nuts', cursive;
+}
+
 .container-destinations {
     background-color: #797d62e7;
 }
@@ -95,8 +115,9 @@ a:hover {
 
 .h1-details {
     font-family: 'Grape Nuts', cursive;
-    font-size: 5em;
-    color: #540B0E;
+    font-size: 4em;
+    /* color: #FFF3B0; */
+    color: whitesmoke;
 }
 
 .a-destinations {
