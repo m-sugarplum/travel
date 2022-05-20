@@ -4,111 +4,111 @@
         "city": "San Cristóbal de las Casas",
         "state": "Chiapas",
         "description": "Description for San Cristobal comes here",
-        "img": "https://images.unsplash.com/photo-1593374419603-bf046ae3a497?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        "img": "/photos/SanCristobal-square.jpg"
     },
     "2": {
         "placeName": "Lagunas de Montebello",
         "city": "Comitán",
         "state": "Chiapas",
         "description": "Description for Lagunas de Montebello comes here",
-        "img": "https://images.unsplash.com/photo-1584315450960-7ebef8d0b179?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+        "img": "/photos/Montebello-square.jpg"
     },
     "3": {
         "placeName": "Lagos de Colon",
         "city": "Lagos de Colon",
         "state": "Chiapas",
         "description": "Description for Lagos de Colon comes here Carrot cake halvah cake wafer topping brownie donut I love. Croissant pudding caramels macaroon jelly beans macaroon. Croissant I love gummies bonbon cupcake bear claw donut halvah. Tootsie roll candy jelly-o dragée marshmallow marzipan cookie. Jujubes marzipan chocolate chocolate bar macaroon I love. Halvah tart caramels gingerbread halvah macaroon.",
-        "img": "https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+        "img": "/photos/LagosDeColon-square.jpg"
     },
     "4": {
         "placeName": "Cascada El Chiflon",
         "city": "San Vicente La Mesilla",
         "state": "Chiapas",
         "description": "Description for Cascada El Chiflon comes here Carrot cake halvah cake wafer topping brownie donut I love. Croissant pudding caramels macaroon jelly beans macaroon. Croissant I love gummies bonbon cupcake bear claw donut halvah. Tootsie roll candy jelly-o dragée marshmallow marzipan cookie. Jujubes marzipan chocolate chocolate bar macaroon I love. Halvah tart caramels gingerbread halvah macaroon.",
-        "img": "https://images.unsplash.com/photo-1554296109-fb7a6c8af84c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+        "img": "/photos/Chiflon-square.jpg"
     },
     "5": {
         "placeName": "Palenque",
         "city": "Palenque",
         "state": "Chiapas",
         "description": "Description for Palenque comes here",
-        "img": "https://images.unsplash.com/photo-1583684894818-b85e49a78a62?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80"
+        "img": "/photos/Palenque1-square.jpg"
     },
     "6": {
         "placeName": "la Selva Lacandona",
         "city": "Montes Azules Biosphere Reserve",
         "state": "Chiapas",
         "description": "Description for la Selva Lacandona comes here",
-        "img": "https://images.unsplash.com/photo-1570108691072-d03b433fc8c0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+        "img": "/photos/Lacandona-square.jpg"
     },
     "7": {
         "placeName": "Cancun",
         "city": "Cancún",
         "state": "Quintana Roo",
         "description": "Description for Cancun comes here",
-        "img": "https://images.unsplash.com/photo-1552442331-e2a1c86d7224?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80"
+        "img": "/photos/Cancun-square.jpg"
     },
     "8": {
         "placeName": "Mazatlán",
         "city": "Mazatlán",
         "state": "Sinaloa",
         "description": "Description for Mazatlan comes here",
-        "img": "https://images.unsplash.com/photo-1519837242121-561f79e8e7e7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80"
+        "img": "/photos/Mazatlan-square.jpg"
     },
     "9": {
-        "placeName": " Cañón del Sumidero",
+        "placeName": "Cañón del Sumidero",
         "city": "Tuxtla Gutiérrez",
         "state": "Chiapas",
         "description": "Sumidero Canyon is set within a national park of the same name in Mexico’s southern Chiapas state. It’s home to endangered species such as river crocodiles, spider monkeys and ocelots. Fed by the Grijalva River, a reservoir formed by the Chicoasén Dam fills the canyon. Boat trips through the canyon embark from the colonial town of Chiapa de Corzo. Viewpoints (miradores) dot the top of the canyon’s towering walls.",
-        "img": "https://images.unsplash.com/photo-1630730041073-c75e98030355?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        "img": "/photos/Sumidero-square.jpg"
     },
     "10": {
         "placeName": "Guadalajara",
         "city": "Guadalajara",
         "state": "Jalisco",
         "description": "Guadalajara is a city in western Mexico. It’s known for tequila and mariachi music, both born in Jalisco, the state of which Guadalajara is the capital. ",
-        "img": "https://images.unsplash.com/photo-1561788655-79bf50b6b174?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1931&q=80"
+        "img": "/photos/Guadalajara-square.jpg"
     },
     "11": {
         "placeName": "Islas Marietas",
         "city": "Punta de Mita",
         "state": "Nayarit",
         "description": "The Marieta Islands are located just a few miles off the tip of Punta Mita on the west coast of Mexico. This archipelago in Banderas Bay (Bahía de Banderas) is thought to have been formed by volcanic activity thousands of years ago. The islands have never been inhabited by humans, only by wildlife.",
-        "img": "https://images.unsplash.com/photo-1647277921296-9eeebf1fc2a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        "img": "/photos/Marietas-square.jpg"
     },
     "12": {
         "placeName": "Cenotes Casa Tortuga",
         "city": "Tulum",
         "state": "Quintana Roo",
         "description": "Cenotes Casa Tortuga Tulum is a Natural Park full of adventures, experiences and unforgettable moments. On the guided tour you will learn about the mysteries of the ancient caves, secrets of the Mayan jungle and thousands of adventures in its crystal clear waters.",
-        "img": "https://images.unsplash.com/photo-1606848686240-2c417875033b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        "img": "/photos/Tortuga-square.jpg"
     },
     "13": {
         "placeName": "Monarch Butterfly Biosphere Reserve",
         "city": "Temascaltepec",
         "state": "Michoacán",
         "description": "The Monarch Butterfly Biosphere Reserve World Heritage property protects key overwintering sites for the monarch butterfly. The millions of monarch butterflies that return to the property every year bend tree branches by their weight, fill the sky when they take flight, and make a sound like light rain with the beating of their wings. Witnessing this unique phenomenon is an exceptional experience of nature. Up to a billion monarch butterflies return annually, from breeding areas as far away as Canada.",
-        "img": "https://images.unsplash.com/photo-1509715513011-e394f0cb20c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8bW9uYXJjaCUyMGJ1dHRlcmZsaWVzfGVufDB8MHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        "img": "/photos/MariposaMonarca-square.jpg"
     },
     "14": {
         "placeName": "Huasteca potosina",
         "city": "Ciudad Valles",
         "state": "San Luis Potosí",
         "description": "The Huasteca Potosina is a part of the bigger region of the Huastecas, named after the pre-hispanic civilization living here, the Huastecan. The entire area presents a variety of landscapes, from flatlands to hills made of calcified sand, basalt from old lava flows which penetrate the primarily sedimentary rock molded by the wind and water erosion. As a result, the Huasteca Potosina is characterized by a huge amount of waterfalls, canyons, natural pools, and caves; a huge natural playground to discover for nature lovers.",
-        "img": "https://images.unsplash.com/photo-1634431484225-cda0695b260f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        "img": "/photos/Huasteca-square.jpg"
     },
     "15": {
         "placeName": "Tequila",
         "city": "Tequila",
         "state": "Jalisco",
         "description": "Tequila is a town in Mexico’s western state of Jalisco. It’s known for its production of the famous spirit. Near the foot of the Tequila Volcano, the outskirts of town are dotted with fields of blue agave, the liquor’s main ingredient. The production process can be observed at several distilleries and haciendas. The Museo Nacional del Tequila and the Museo Los Abuelos feature exhibits on the history of the drink.",
-        "img": "https://images.unsplash.com/photo-1634130132261-3bdf61051454?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8dGVxdWlsYSUyMG1leGljb3xlbnwwfDB8MHx8&auto=format&fit=crop&w=500&q=60"
+        "img": "/photos/Tequila-square.jpg"
     },
     "16": {
         "placeName": "Punta Cometa",
         "city": "Mazunte",
         "state": "Oaxaca",
         "description": "Nice sunsets",
-        "img": "https://images.unsplash.com/photo-1591112622205-8bc7d47ca7a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+        "img": "/photos/PuntaCometa-square.jpg"
     }
 }
