@@ -32,7 +32,7 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-image: url("https://images.unsplash.com/photo-1518965539400-77d851d65c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    height: 30em;
+
 }
 
 .add-place {
@@ -196,12 +196,21 @@ input::placeholder {
         height: 10%;
     }
 
+    .jumbotron {
+        height: 15em;
+    }
+
 }
 
-@media (min-width: 769px) {
+@media (min-width: 577px) {
     h1 {
         font-size: 3rem;
     }
+
+    .jumbotron {
+        height: 20em;
+    }
+
 
     .add-place {
         width: 30%;
@@ -227,6 +236,10 @@ input::placeholder {
         font-size: 4rem;
     }
 
+    .jumbotron {
+        height: 25em;
+    }
+
     .h1-details {
         font-size: 6rem;
     }
@@ -239,5 +252,16 @@ input::placeholder {
 @media (min-width: 1201px) {
     h1 {
         font-size: 5rem;
+    }
+
+}
+
+@media (min-width: 1401px) {
+    h1 {
+        font-size: 5rem;
+    }
+
+    .jumbotron {
+        height: 20em;
     }
 }
