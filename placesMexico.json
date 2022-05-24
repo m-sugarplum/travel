@@ -4,111 +4,127 @@
         "city": "San Cristóbal de las Casas",
         "state": "Chiapas",
         "description": "Description for San Cristobal comes here",
-        "img": "/photos/SanCristobal-square.jpg"
+        "img": "/photos/SanCristobal-square.jpg",
+        "imgWide": "/photos/SanCristobal.jpg"
     },
     "2": {
         "placeName": "Lagunas de Montebello",
         "city": "Comitán",
         "state": "Chiapas",
         "description": "Description for Lagunas de Montebello comes here",
-        "img": "/photos/Montebello-square.jpg"
+        "img": "/photos/Montebello-square.jpg",
+        "imgWide": "/photos/Montebello.jpg"
     },
     "3": {
         "placeName": "Lagos de Colon",
         "city": "Lagos de Colon",
         "state": "Chiapas",
         "description": "Description for Lagos de Colon comes here Carrot cake halvah cake wafer topping brownie donut I love. Croissant pudding caramels macaroon jelly beans macaroon. Croissant I love gummies bonbon cupcake bear claw donut halvah. Tootsie roll candy jelly-o dragée marshmallow marzipan cookie. Jujubes marzipan chocolate chocolate bar macaroon I love. Halvah tart caramels gingerbread halvah macaroon.",
-        "img": "/photos/LagosDeColon-square.jpg"
+        "img": "/photos/LagosDeColon-square.jpg",
+        "imgWide": "/photos/LagosDeColon.jpg"
     },
     "4": {
         "placeName": "Cascada El Chiflon",
         "city": "San Vicente La Mesilla",
         "state": "Chiapas",
         "description": "Description for Cascada El Chiflon comes here Carrot cake halvah cake wafer topping brownie donut I love. Croissant pudding caramels macaroon jelly beans macaroon. Croissant I love gummies bonbon cupcake bear claw donut halvah. Tootsie roll candy jelly-o dragée marshmallow marzipan cookie. Jujubes marzipan chocolate chocolate bar macaroon I love. Halvah tart caramels gingerbread halvah macaroon.",
-        "img": "/photos/Chiflon-square.jpg"
+        "img": "/photos/Chiflon-square.jpg",
+        "imgWide": "/photos/Chiflon.jpg"
     },
     "5": {
         "placeName": "Palenque",
         "city": "Palenque",
         "state": "Chiapas",
         "description": "Description for Palenque comes here",
-        "img": "/photos/Palenque1-square.jpg"
+        "img": "/photos/Palenque1-square.jpg",
+        "imgWide": "/photos/Palenque.jpg"
     },
     "6": {
         "placeName": "la Selva Lacandona",
         "city": "Montes Azules Biosphere Reserve",
         "state": "Chiapas",
         "description": "Description for la Selva Lacandona comes here",
-        "img": "/photos/Lacandona-square.jpg"
+        "img": "/photos/Lacandona-square.jpg",
+        "imgWide": "/photos/Lacandona.jpg"
     },
     "7": {
         "placeName": "Cancun",
         "city": "Cancún",
         "state": "Quintana Roo",
         "description": "Description for Cancun comes here",
-        "img": "/photos/Cancun-square.jpg"
+        "img": "/photos/Cancun-square.jpg",
+        "imgWide": "/photos/Cancun.jpg"
     },
     "8": {
         "placeName": "Mazatlán",
         "city": "Mazatlán",
         "state": "Sinaloa",
         "description": "Description for Mazatlan comes here",
-        "img": "/photos/Mazatlan-square.jpg"
+        "img": "/photos/Mazatlan-square.jpg",
+        "imgWide": "/photos/Mazatlan.jpg"
     },
     "9": {
         "placeName": "Cañón del Sumidero",
         "city": "Tuxtla Gutiérrez",
         "state": "Chiapas",
         "description": "Sumidero Canyon is set within a national park of the same name in Mexico’s southern Chiapas state. It’s home to endangered species such as river crocodiles, spider monkeys and ocelots. Fed by the Grijalva River, a reservoir formed by the Chicoasén Dam fills the canyon. Boat trips through the canyon embark from the colonial town of Chiapa de Corzo. Viewpoints (miradores) dot the top of the canyon’s towering walls.",
-        "img": "/photos/Sumidero-square.jpg"
+        "img": "/photos/Sumidero-square.jpg",
+        "imgWide": "/photos/Sumidero.jpg"
     },
     "10": {
         "placeName": "Guadalajara",
         "city": "Guadalajara",
         "state": "Jalisco",
         "description": "Guadalajara is a city in western Mexico. It’s known for tequila and mariachi music, both born in Jalisco, the state of which Guadalajara is the capital. ",
-        "img": "/photos/Guadalajara-square.jpg"
+        "img": "/photos/Guadalajara-square.jpg",
+        "imgWide": "/photos/Guadalajara.jpg"
     },
     "11": {
         "placeName": "Islas Marietas",
         "city": "Punta de Mita",
         "state": "Nayarit",
         "description": "The Marieta Islands are located just a few miles off the tip of Punta Mita on the west coast of Mexico. This archipelago in Banderas Bay (Bahía de Banderas) is thought to have been formed by volcanic activity thousands of years ago. The islands have never been inhabited by humans, only by wildlife.",
-        "img": "/photos/Marietas-square.jpg"
+        "img": "/photos/Marietas-square.jpg",
+        "imgWide": "/photos/Marietas.jpg"
     },
     "12": {
         "placeName": "Cenotes Casa Tortuga",
         "city": "Tulum",
         "state": "Quintana Roo",
         "description": "Cenotes Casa Tortuga Tulum is a Natural Park full of adventures, experiences and unforgettable moments. On the guided tour you will learn about the mysteries of the ancient caves, secrets of the Mayan jungle and thousands of adventures in its crystal clear waters.",
-        "img": "/photos/Tortuga-square.jpg"
+        "img": "/photos/Tortuga-square.jpg",
+        "imgWide": "/photos/Tortuga.jpg"
     },
     "13": {
         "placeName": "Monarch Butterfly Biosphere Reserve",
         "city": "Temascaltepec",
         "state": "Michoacán",
         "description": "The Monarch Butterfly Biosphere Reserve World Heritage property protects key overwintering sites for the monarch butterfly. The millions of monarch butterflies that return to the property every year bend tree branches by their weight, fill the sky when they take flight, and make a sound like light rain with the beating of their wings. Witnessing this unique phenomenon is an exceptional experience of nature. Up to a billion monarch butterflies return annually, from breeding areas as far away as Canada.",
-        "img": "/photos/MariposaMonarca-square.jpg"
+        "img": "/photos/MariposaMonarca-square.jpg",
+        "imgWide": "/photos/MariposaMonarca.jpg"
     },
     "14": {
         "placeName": "Huasteca potosina",
         "city": "Ciudad Valles",
         "state": "San Luis Potosí",
         "description": "The Huasteca Potosina is a part of the bigger region of the Huastecas, named after the pre-hispanic civilization living here, the Huastecan. The entire area presents a variety of landscapes, from flatlands to hills made of calcified sand, basalt from old lava flows which penetrate the primarily sedimentary rock molded by the wind and water erosion. As a result, the Huasteca Potosina is characterized by a huge amount of waterfalls, canyons, natural pools, and caves; a huge natural playground to discover for nature lovers.",
-        "img": "/photos/Huasteca-square.jpg"
+        "img": "/photos/Huasteca-square.jpg",
+        "imgWide": "/photos/Huasteca.jpg"
     },
     "15": {
         "placeName": "Tequila",
         "city": "Tequila",
         "state": "Jalisco",
         "description": "Tequila is a town in Mexico’s western state of Jalisco. It’s known for its production of the famous spirit. Near the foot of the Tequila Volcano, the outskirts of town are dotted with fields of blue agave, the liquor’s main ingredient. The production process can be observed at several distilleries and haciendas. The Museo Nacional del Tequila and the Museo Los Abuelos feature exhibits on the history of the drink.",
-        "img": "/photos/Tequila-square.jpg"
+        "img": "/photos/Tequila-square.jpg",
+        "imgWide": "/photos/Tequila.jpg"
     },
     "16": {
         "placeName": "Punta Cometa",
         "city": "Mazunte",
         "state": "Oaxaca",
         "description": "Nice sunsets",
-        "img": "/photos/PuntaCometa-square.jpg"
+        "img": "/photos/PuntaCometa-square.jpg",
+        "imgWide": "/photos/PuntaCometa.jpg"
     }
 }
