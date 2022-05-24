@@ -3,8 +3,8 @@
     <body class="body-destinations">
         <%- include('partials/navbar.ejs') %>
             <div class="container text-center container-destinations">
-                <h1 class="text-center pt-5 pb-3 h1-destinations">Mexico</h1>
-                <a href="/mexico/new" class="justify-content-center">Add New Place</a>
+                <h1 class="text-center pt-2 pb-2 h1-destinations">Mexico</h1>
+                <a href="/mexico/new" class="justify-content-center add-place mx-auto mt-3">Add New Place</a>
 
 
                 <% let length=numOfPlaces %>
@@ -15,7 +15,7 @@
                         <% let place=(listOfPlaces[i-1])%>
                             <% if (i==1) { %>
 
-                                <div class="row justify-content-center pt-5">
+                                <div class="row justify-content-center ">
                                     <div class="col-xs-12 col-md-6 p-md-4 p-lg-5 pb-5">
 
                                         <img src="<%=placesMexico[place].img%>" alt="" class="img-thumbnail">

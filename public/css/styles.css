@@ -32,7 +32,13 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-image: url("https://images.unsplash.com/photo-1518965539400-77d851d65c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    height: 35em;
+    height: 30em;
+}
+
+.add-place {
+    border: solid;
+    width: 20%;
+    font-size: 1.7em;
 }
 
 nav {
@@ -196,6 +202,10 @@ input::placeholder {
         font-size: 3rem;
     }
 
+    .h1-details {
+        font-size: 5rem;
+    }
+
     a {
         font-size: 1.8rem;
     }
@@ -204,6 +214,10 @@ input::placeholder {
 @media (min-width: 1025px) {
     h1 {
         font-size: 4rem;
+    }
+
+    .h1-details {
+        font-size: 6rem;
     }
 
     a {
