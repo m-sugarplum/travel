@@ -4,7 +4,7 @@
 
         <%- include('partials/navbar.ejs') %>
 
-            <!-- Main container for the images display -->
+            <!-- Main container - show page with a list of destinations in a bootstrap grid (image + place name) -->
             <div class="container text-center container-destinations">
 
                 <!-- Title -->
@@ -17,7 +17,7 @@
                 <% let length=numOfPlaces %>
 
                     <% for (let i=1; i < length+1; i++) { %>
-                        <!-- Looping over all keys in json file and displaying image + destination name in bootstrap grid (1 or 2 elements in a row) -->
+                        <!-- Looping over all keys in json file and displaying destinations in a grid (1 or 2 elements in a row) -->
                         <% let place=(listOfPlaces[i-1])%>
                             <% if (i%2 !==0) { %>
                                 <!--For all uneven numbers (1,3,5,7 etc) of destinations from json file: opening for row div + col div including image and place name -->
@@ -55,7 +55,7 @@
                                         <!-- Row with Back to Top button  -->
                                         <div class="row justify-content-center">
                                             <button type="button"
-                                                class="btn btn-lg btn-outline-warning col-4 col-md-2 m-3  btn-scroll-up">
+                                                class="btn btn-lg btn-outline-warning col-4 col-md-2 m-3 btn-scroll-up">
                                                 Back to Top
                                             </button>
                                         </div>

@@ -20,6 +20,11 @@ app.get('/', (req, res) => {
 })
 
 
+app.get('/about', (req, res) => {
+    res.render('about.ejs')
+})
+
+
 app.get('/mexico', (req, res) => {
     res.render('destinations.ejs', {
         placesMexico,
@@ -41,7 +46,6 @@ app.post('/', (req, res) => {
     placesMexico = fs.readFileSync('./placesMexico.json');
     res.render('home.ejs');
 })
-
 
 
 app.get('/mexico/new', (req, res) => {
