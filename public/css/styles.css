@@ -70,12 +70,14 @@ body {
     max-width: 65%;
 }
 
-
-
 .contact:hover {
     border: 2px rgb(255, 255, 255) solid;
     box-shadow: 7px 3px 5px#D3CFBC;
     background-color: #ffd999;
+}
+
+.text-update {
+    height: 400px;
 }
 
 .jumbotron {
@@ -84,13 +86,23 @@ body {
     background-position: bottom;
     background-repeat: no-repeat;
     background-image: url("https://images.unsplash.com/photo-1518965539400-77d851d65c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-
 }
 
 .add-place {
     border: solid;
-    /* width: 50%; */
     font-size: 1.6em;
+}
+
+.link-backToDetails {
+    color: #997b66;
+    border: 1px solid #997b66;
+    width: 20%;
+    font-size: 1.5em;
+}
+
+.link-backToDetails:hover {
+    color: #e2a027;
+    border-color: #e2a027;
 }
 
 nav {
@@ -127,7 +139,6 @@ a {
 }
 
 a:hover {
-    /* home */
     color: #e2a027;
     text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
 }
@@ -157,7 +168,6 @@ a:hover {
     color: #8fa997;
 }
 
-
 .h1-destinations {
     font-family: 'Bungee Inline', cursive;
     font-size: 5rem;
@@ -177,7 +187,6 @@ a:hover {
 .h1-details {
     font-family: 'Grape Nuts', cursive;
     font-size: 3em;
-    /* color: #FFF3B0; */
     color: whitesmoke;
 }
 
@@ -188,9 +197,7 @@ a:hover {
 }
 
 h3:hover {
-    /* to delete */
     color: #FFF3B0;
-
     text-shadow: rgba(255, 204, 0, 0.539) 1px 0 10px;
 }
 
@@ -288,6 +295,10 @@ input::placeholder {
         color: #497c49;
     }
 
+    .text-update {
+        height: 500px;
+    }
+
     a {
         font-size: 1.8rem;
     }
@@ -295,7 +306,6 @@ input::placeholder {
     .contact {
         max-width: 45%;
     }
-
 
     .email {
         font-size: 2.5em;
@@ -309,6 +319,11 @@ input::placeholder {
 
     .jumbotron {
         height: 25em;
+    }
+
+    .link-backToDetails {
+        width: 15%;
+        font-size: 1.8em;
     }
 
     .h1-details {
@@ -345,7 +360,6 @@ input::placeholder {
     .contact {
         max-width: 30%;
     }
-
 }
 
 @media (min-width: 1401px) {

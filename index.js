@@ -3,6 +3,7 @@ const app = express();
 const path = require('path');
 const fs = require('fs');
 let placesMexico = require('./placesMexico.json');
+const res = require('express/lib/response');
 
 let listOfPlaces = Object.keys(placesMexico);
 let numOfPlaces = listOfPlaces.length;
@@ -55,9 +56,30 @@ app.get('/mexico/new', (req, res) => {
 
 app.get('/mexico/:id', (req, res) => {
     const { id } = req.params;
-    data = placesMexico[id];
-    res.render('details.ejs', { data });
+    let data = placesMexico[id];
+    res.render('details.ejs', { data, id });
 })
+
+app.get('/mexico/:id/edit', (req, res) => {
+    const { id } = req.params;
+    let data = placesMexico[id];
+    let description = data.description;
+    let placeName = data.placeName;
+    let city = data.city;
+    let state = data.state;
+    let img = data.imgWide;
+    console.log(id)
+
+    res.render('update.ejs', { description, placeName, city, state, img, id })
+})
+// app.patch('/mexico/:id', (req, res) => {
+//     const { id } = req.params;
+//     let data = placesMexico[id];
+//     let description = data.description;
+//     const updatedDescription = req.body.description;
+//     description = updatedDescription;
+//     res.redirect('/mexico');
+// })
 
 
 app.listen(8080, () => {
