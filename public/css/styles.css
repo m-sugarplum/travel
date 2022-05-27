@@ -4,17 +4,17 @@ body {
 }
 
 .body-new {
-    background-image: url("https://images.unsplash.com/photo-1606291098139-e1b96a1eabe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
-    background-color: #031514;
+    background-image: url("/photos/cactus.jpg");
+    background-color: #101008;
 }
 
 .body-destinations {
-    background-image: url("https://images.unsplash.com/photo-1606291098139-e1b96a1eabe3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-image: url("/photos/cloud.jpg");
     background-color: #031514;
 }
 
 .body-home {
-    background-image: url("https://images.unsplash.com/photo-1646970285128-3b34086896f4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1227&q=80");
+    background-image: url("/photos/punta-allen-vertical.jpg");
     background-color: #897f48c1;
 }
 
@@ -80,12 +80,16 @@ body {
     height: 400px;
 }
 
+.description-text {
+    font-size: 1.5em;
+}
+
 .jumbotron {
     background-color: #1b1e18;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-image: url("https://images.unsplash.com/photo-1518965539400-77d851d65c43?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    background-image: url("/photos/clay.jpg");
 }
 
 .add-place {
@@ -103,6 +107,10 @@ body {
 .link-backToDetails:hover {
     color: #e2a027;
     border-color: #e2a027;
+}
+
+.img-wide {
+    border-radius: 15px;
 }
 
 nav {
@@ -144,7 +152,8 @@ a:hover {
 }
 
 .location-svg {
-    transform: scale(2.0);
+    transform: scale(2.5);
+    color: #7b8371;
 }
 
 .container-destinations {
@@ -154,6 +163,12 @@ a:hover {
 .container-new {
     background-color: #f1dca7d6;
 
+}
+
+.location-text {
+    font-size: 2.5rem;
+    font-family: 'Grape Nuts';
+    color: #497c49;
 }
 
 .h1-home {
@@ -225,17 +240,18 @@ input::placeholder {
     }
 
     .body-home {
-        background-image: url("https://images.unsplash.com/photo-1613307378200-0b366638a906?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+        background-image: url("/photos/punta-allen.jpg");
+        background-color: #d9c5a9;
     }
 
-    .body-destinations,
     .body-new {
-        background-image: url("https://images.unsplash.com/photo-1541225640048-a30ee9bb3180?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80");
+        background-image: url("/photos/leaf-background.jpg");
+        background-color: #2b1b26;
     }
 
     .intro {
         margin-top: 10%;
-        background-color: #e09f3edb;
+        background-color: #efb865e3;
     }
 
     h3 {
@@ -259,12 +275,11 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 15em;
+        height: 13em;
     }
 
     .add-place {
         width: 50%;
-        /* font-size: 2em; */
     }
 }
 
@@ -278,21 +293,12 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 20em;
+        height: 15em;
     }
 
     .add-place {
         width: 40%;
         font-size: 2em;
-    }
-
-    .h1-details {
-        font-size: 4rem;
-    }
-
-    .location-text {
-        font-size: 2.5rem;
-        color: #497c49;
     }
 
     .text-update {
@@ -318,7 +324,7 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 25em;
+        height: 20em;
     }
 
     .link-backToDetails {
@@ -327,7 +333,7 @@ input::placeholder {
     }
 
     .h1-details {
-        font-size: 6rem;
+        font-size: 4.5rem;
     }
 
     a {
@@ -341,7 +347,6 @@ input::placeholder {
     .contact {
         max-width: 35%;
     }
-
 
     .email {
         font-size: 3.0em;

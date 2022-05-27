@@ -2,13 +2,16 @@
 
     <body class="body-details">
         <%- include('partials/navbar.ejs') %>
+            <div class="container-fluid p-0">
 
-
-            <div class="d-flex flex-column justify-content-center jumbotron">
-                <h1 class="p-5 h1-details">
-                    <%=data.placeName%>
-                </h1>
+                <div class="d-flex flex-column justify-content-center jumbotron">
+                    <h1 class="p-5 h1-details">
+                        <%=data.placeName%>
+                    </h1>
+                </div>
             </div>
+
+
 
             <div class="container-fluid ">
 
@@ -31,25 +34,26 @@
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-xxl-6">
                         <% if (data.img) { %>
-                            <img class="img-fluid my-auto" src="<%=data.imgWide%>" alt="">
+                            <img class="img-fluid mb-xl-4 mx-md-5 img-wide" src="<%=data.imgWide%>" alt="">
                             <%}%>
                     </div>
                     <div class="col">
-                        <div class="m-5 description-text pb-5">
-                            <h2>
+                        <div class="m-5 text-center">
+                            <h2 class="description-text">
                                 <%= data.description%>
                             </h2>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
+                <div class="row justify-content-center align-items- center text-center">
 
                     <a href="/mexico/<%= id %>/edit"
-                        class="btn btn-lg btn-outline-success col-4 col-md-2 m-3 btn-backToMexico">
+                        class="btn btn-lg btn-outline-success col-sm-4  col-sm-3 col-xl-2 m-3 link-edit">
                         Edit Destination
                     </a>
 
-                    <a href="/mexico" class="btn btn-lg btn-outline-secondary col-4 col-md-2 m-3 btn-backToMexico">
+                    <a href="/mexico"
+                        class="btn btn-lg btn-outline-secondary col-sm-4 col-sm-3 col-xl-2 m-3 btn-backToMexico">
                         Back to Destinations
                     </a>
                 </div>
