@@ -23,30 +23,59 @@ body {
 }
 
 .body-about {
-    background: linear-gradient(90deg, #e7c591, #fffab991);
+    background: linear-gradient(90deg, #ffbc56b5, #fffab991);
 }
 
 .container-about {
     background-color: whitesmoke;
-    min-height: 500px;
+    border: 5px solid whitesmoke;
+    min-height: 400px;
+    max-width: 1100px;
 }
 
 .col-picture {
-    min-height: 500px;
-    background-color: #561f0e29;
+    min-height: 400px;
+    background-color: #efd98b38;
     background-position: top;
     background-image:
-        url("/photos/leaf.png");
+        url("/photos/leaf-resize.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .img-profile {
-    /* width: 100%; */
-    max-width: 250px;
+    width: 100%;
+    max-width: 280px;
     border-radius: 50%;
-    /* object-position: center center; */
+    object-position: center;
 
+}
+
+.email {
+    color: #abb79e;
+    font-family: 'Grape Nuts', cursive;
+    font-size: 2em;
+}
+
+.email-address {
+    font-family: 'Share', cursive;
+    font-size: 1.3em;
+    color: #748d7b
+}
+
+.contact {
+    border: 2px rgb(128 128 128 / 15%) solid;
+    transition: all 0.5s ease-out;
+    background-color: #F3EFDF;
+    max-width: 65%;
+}
+
+
+
+.contact:hover {
+    border: 2px rgb(255, 255, 255) solid;
+    box-shadow: 7px 3px 5px#D3CFBC;
+    background-color: #ffd999;
 }
 
 .jumbotron {
@@ -107,10 +136,6 @@ a:hover {
     transform: scale(2.0);
 }
 
-/* .location-text { */
-/* font-family: 'Grape Nuts', cursive; */
-/* } */
-
 .container-destinations {
     background-color: #797d62e7;
 }
@@ -129,7 +154,7 @@ a:hover {
 .h1-about {
     font-family: 'Grape Nuts', cursive;
     font-size: 3em;
-    color: rosybrown;
+    color: #8fa997;
 }
 
 
@@ -172,14 +197,6 @@ h3:hover {
 blockquote {
     font-family: 'Nunito Sans', sans-serif;
 }
-
-
-
-/* .img-art {
-    width: 100%;
-    max-width: 200px;
-    height: auto;
-} */
 
 .logo {
     max-height: 2em;
@@ -274,6 +291,15 @@ input::placeholder {
     a {
         font-size: 1.8rem;
     }
+
+    .contact {
+        max-width: 45%;
+    }
+
+
+    .email {
+        font-size: 2.5em;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -295,13 +321,29 @@ input::placeholder {
 
     .add-place {
         width: 30%;
-        /* font-size: 2em; */
+    }
+
+    .contact {
+        max-width: 35%;
+    }
+
+
+    .email {
+        font-size: 3.0em;
+    }
+
+    .email-address {
+        font-size: 1.8em;
     }
 }
 
 @media (min-width: 1201px) {
     h1 {
         font-size: 5rem;
+    }
+
+    .contact {
+        max-width: 30%;
     }
 
 }
