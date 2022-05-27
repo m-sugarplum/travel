@@ -23,22 +23,22 @@ body {
 }
 
 .body-about {
-    background: linear-gradient(90deg, #ffbc56b5, #fffab991);
+    background: linear-gradient(90deg, #ffbc56b5, #e5e5e5);
 }
 
 .container-about {
-    background-color: whitesmoke;
-    border: 5px solid whitesmoke;
+    background-color: #fefff261;
+    border: 5px solid white;
     min-height: 400px;
     max-width: 1100px;
 }
 
 .col-picture {
-    min-height: 400px;
+    min-height: 500px;
     background-color: #efd98b38;
     background-position: top;
     background-image:
-        url("/photos/leaf-resize.png");
+        url("/photos/tiles-vertical3.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -47,12 +47,12 @@ body {
     width: 100%;
     max-width: 280px;
     border-radius: 50%;
-    object-position: center;
+    /* object-position: center; */
 
 }
 
 .email {
-    color: #abb79e;
+    color: #a9a081;
     font-family: 'Grape Nuts', cursive;
     font-size: 2em;
 }
@@ -66,7 +66,7 @@ body {
 .contact {
     border: 2px rgb(128 128 128 / 15%) solid;
     transition: all 0.5s ease-out;
-    background-color: #F3EFDF;
+    background-color: #f1d8aa;
     max-width: 65%;
 }
 
@@ -180,7 +180,7 @@ a:hover {
 .h1-about {
     font-family: 'Grape Nuts', cursive;
     font-size: 3em;
-    color: #8fa997;
+    color: #6e8784;
 }
 
 .h1-destinations {
@@ -202,7 +202,7 @@ a:hover {
 .h1-details {
     font-family: 'Grape Nuts', cursive;
     font-size: 3em;
-    color: whitesmoke;
+    color: #e3d891;
 }
 
 .a-destinations {
