@@ -49,7 +49,7 @@ app.post('/', (req, res) => {
         }
     })
     placesMexico = fs.readFileSync('./placesMexico.json');
-    res.render('home.ejs');
+    res.redirect('/mexico');
 })
 
 
@@ -119,12 +119,25 @@ app.patch('/mexico/:id', (req, res) => {
         }
     })
     placesMexico = fs.readFileSync('./placesMexico.json');
-
-    res.redirect('/mexico');
+    res.redirect('/mexico')
 })
 
+
+app.delete('/mexico/:id', (req, res) => {
+    const { id } = req.params;
+    console.log(placesMexico[id])
+    delete placesMexico[id];
+    console.log(placesMexico[id])
+    fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
+        if (err) {
+            console.error(err)
+            return
+        }
+    })
+    placesMexico = fs.readFileSync('./placesMexico.json');
+    res.redirect('/mexico')
+})
 
 app.listen(8080, () => {
     console.log("ON PORT 8080!")
 })
-
