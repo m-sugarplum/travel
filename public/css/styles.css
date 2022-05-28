@@ -100,7 +100,6 @@ body {
 .link-backToDetails {
     color: #997b66;
     border: 1px solid #997b66;
-    width: 20%;
     font-size: 1.5em;
 }
 
@@ -281,6 +280,11 @@ input::placeholder {
     .add-place {
         width: 50%;
     }
+
+    .link-backToDetails {
+        min-width: 60%;
+    }
+
 }
 
 @media (min-width: 577px) {
@@ -328,7 +332,7 @@ input::placeholder {
     }
 
     .link-backToDetails {
-        width: 15%;
+        width: 20%;
         font-size: 1.8em;
     }
 
