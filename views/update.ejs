@@ -1,11 +1,14 @@
 <%- include('partials/head.ejs') %>
 
     <body class="body-new">
+
         <%- include('partials/navbar.ejs') %>
 
             <div class="container text-center container-new">
-                <form action="/" method="post">
-                    <h1 class="text-center pt-5 pb-3 h1-new">Edit <%= placeName %>
+
+                <!-- Form with Express override method using a query value, fields are pre-populated using data from placesMexico.json file -->
+                <form action="/mexico/<%= id %>?_method=PATCH" method="POST">
+                    <h1 class="text-center pt-5 pb-3 h1-new">Edit <%= location.placeName %>
                     </h1>
                     <a href="/mexico/<%= id %>"
                         class="justify-content-center link-backToDetails my-4 mx-auto mt-3">Back</a>
@@ -14,24 +17,24 @@
                         <div class="col-md-10 col-xl-8">
                             <div class="input-group input-group-lg mb-3 pt-3">
                                 <span class="input-group-text " id="basic-addon1">Place to visit</span>
-                                <input type="text" class="form-control text-reset" value="<%= placeName %>"
+                                <input type="text" class="form-control text-reset" value="<%= location.placeName %>"
                                     aria-label="Place to visit" aria-describedby="basic-addon1" name="placeName">
                             </div>
                         </div>
                         <div class="col-md-10 col-xl-8">
                             <div class="input-group input-group-lg pt-3">
                                 <span class="input-group-text">Closest city and state</span>
-                                <input type="text" aria-label="Closest city" class="form-control" value="<%= city %>"
-                                    name="city">
+                                <input type="text" aria-label="Closest city" class="form-control"
+                                    value="<%= location.city %>" name="city">
                                 <input type="text" aria-label="State" class="form-control" placeholder="Chiapas"
-                                    name="state" value="<%= state %>">
+                                    name="state" value="<%= location.state %>">
                             </div>
                         </div>
                         <div class="col-md-10 col-xl-8">
                             <div class="input-group input-group-lg pt-3">
                                 <span class="input-group-text">Description</span>
                                 <textarea class="form-control text-update" aria-label="With textarea"
-                                    name="description"><%= description %>
+                                    name="description"><%= location.description %>
                                 </textarea>
                             </div>
                         </div>
@@ -39,7 +42,7 @@
                             <div class="input-group input-group-lg mb-3 pt-3">
                                 <span class="input-group-text " id="basic-addon1">Image URL</span>
                                 <input type="text" class="form-control" aria-label="Place to visit"
-                                    aria-describedby="basic-addon1" name="img" value="<%= img %>">
+                                    aria-describedby="basic-addon1" name="img" value="<%= location.imgWide %>">
                             </div>
                         </div>
                     </div>
