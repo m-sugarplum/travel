@@ -47,8 +47,6 @@ body {
     width: 100%;
     max-width: 280px;
     border-radius: 50%;
-    /* object-position: center; */
-
 }
 
 .email {
@@ -378,7 +376,6 @@ input::placeholder {
 
     .add-place {
         width: 25%;
-        /* font-size: 2em; */
     }
 
     .jumbotron {
