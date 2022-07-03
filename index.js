@@ -2,6 +2,16 @@ const express = require('express');
 const methodOverride = require('method-override');
 const app = express();
 const path = require('path');
+const mysql = require('mysql');
+const password = require('./dbSettings');
+const connection = mysql.createConnection({
+    host: 'localhost',
+    user: 'root',
+    password: password,
+    database: 'mexico'
+});
+
+
 const fs = require('fs');
 // placesMexico.json saves all the information about destinations to visit - later will be replaced by a database
 let placesMexico = require('./placesMexico.json');
