@@ -44,16 +44,15 @@ app.get('/about', (req, res) => {
 
 app.get('/mexico', (req, res) => {
     // rendering page with a list of all destinations to visit in Mexico - show page with square pictures and names of places
-    const countQuery = "SELECT id, place_name, img FROM places ORDER BY id;";
+    const allPlacesQuery = "SELECT id, place_name, img FROM places ORDER BY id;";
     // mexico DB > places
-    connection.query(countQuery, function (error, results, fields) {
+    connection.query(allPlacesQuery, function (error, results, fields) {
         if (error) throw error;
         const allPlaces = results;
         const placesCount = allPlaces.length;
-        res.render("destinations-test.ejs", { allPlaces, placesCount })
+        res.render("destinations.ejs", { allPlaces, placesCount })
     });
 });
-
 
 
 app.post('/', (req, res) => {
@@ -79,9 +78,24 @@ app.get('/mexico/new', (req, res) => {
 
 app.get('/mexico/:id', (req, res) => {
     // rendering details page showing place name, city, state, description and wide picture
-    const { id } = req.params;
-    let data = placesMexico[id];
-    res.render('details.ejs', { data, id });
+    const place_id = req.params.id;
+    // console.log(place_id);
+    const placeQuery = `
+    SELECT place_name, city, state_name, place_description, img_wide 
+    FROM places 
+    JOIN states ON places.state_id = states.id 
+    WHERE places.id=${place_id};`;
+    connection.query(placeQuery, function (error, results, fields) {
+        if (error) throw error;
+        const place = results[0];
+        // console.log(place);
+        // console.log(id, place);
+
+        // res.render("destinations.ejs", { place, id })
+        res.render("details.ejs", { place, place_id });
+    });
+    // let data = placesMexico[id];
+
 })
 
 
@@ -169,5 +183,5 @@ app.delete('/mexico/:id', (req, res) => {
 })
 
 app.listen(8080, () => {
-    console.log("ON PORT 8080!")
+    console.log("Travel app on port 8080!")
 })

@@ -8,13 +8,14 @@
                 <!-- Jumbotron with a place name -->
                 <div class="d-flex flex-column justify-content-center jumbotron">
                     <h1 class="p-5 h1-details">
-                        <%=data.placeName%>
+                        <%=place.place_name%>
                     </h1>
                 </div>
             </div>
 
             <div class="container ">
-                <form class="row gy-2 gx-3 align-items-center" action="/mexico/<%= id %>?_method=DELETE" method="POST">
+                <form class="row gy-2 gx-3 align-items-center" action="/mexico/<%= place_id %>?_method=DELETE"
+                    method="POST">
                     <!-- Button to delete destination -->
                     <div class="col col-md-8">
                     </div>
@@ -33,7 +34,7 @@
                             <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
                         </svg>
                         <h2 class="mb-3 location-text">
-                            <%= data.city%>, <%= data.state%>
+                            <%= place.city%>, <%= place.state_name%>
                         </h2>
                     </div>
                 </div>
@@ -42,8 +43,8 @@
             <div class="row align-items-center">
                 <div class="col-sm-12 col-xxl-6">
                     <!-- Wide picture of a desrtination (from public/photos) -->
-                    <% if (data.img) { %>
-                        <img class="img-fluid mb-xl-4 mx-md-5 img-wide" src="<%=data.imgWide%>" alt="">
+                    <% if (place.img_wide) { %>
+                        <img class="img-fluid mb-xl-4 mx-md-5 img-wide" src="<%=place.img_wide%>" alt="">
                         <%}%>
                 </div>
 
@@ -51,7 +52,7 @@
                     <div class="m-5 text-center">
                         <!-- Place description -->
                         <h2 class="description-text">
-                            <%= data.description%>
+                            <%= place.place_description%>
                         </h2>
                     </div>
                 </div>
@@ -59,7 +60,7 @@
 
             <div class="row justify-content-center align-items- center text-center">
                 <!-- Link styled as a button - to form where destination can be edited -->
-                <a href="/mexico/<%= id %>/edit"
+                <a href="/mexico/<%= place_id %>/edit"
                     class="btn btn-lg btn-outline-success text-nowrap col-6 col-sm-4 col-xl-2 m-1 m-md-3 m-l-4 link-edit">
                     Edit Destination
                 </a>
