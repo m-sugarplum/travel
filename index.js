@@ -44,12 +44,16 @@ app.get('/about', (req, res) => {
 
 app.get('/mexico', (req, res) => {
     // rendering page with a list of all destinations to visit in Mexico - show page with square pictures and names of places
-    return res.render('destinations.ejs', {
-        placesMexico,
-        listOfPlaces,
-        numOfPlaces
+    const countQuery = "SELECT id, place_name, img FROM places ORDER BY id;";
+    // mexico DB > places
+    connection.query(countQuery, function (error, results, fields) {
+        if (error) throw error;
+        const allPlaces = results;
+        const placesCount = allPlaces.length;
+        res.render("destinations-test.ejs", { allPlaces, placesCount })
     });
-})
+});
+
 
 
 app.post('/', (req, res) => {
