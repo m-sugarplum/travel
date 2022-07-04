@@ -57,16 +57,27 @@ app.get('/mexico', (req, res) => {
 
 app.post('/', (req, res) => {
     // data from new.ejs form allows to change placesMexico.json - new destinations is added to the file with consecutive id number (key)
-    const dataId = (numOfPlaces + 1).toString();
-    placesMexico[dataId] = req.body;
-    fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
-        if (err) {
-            console.error(err)
-            return
-        }
-    })
-    placesMexico = fs.readFileSync('./placesMexico.json');
-    res.redirect('/mexico');
+
+    // const dataId = (numOfPlaces + 1).toString();
+
+    // fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
+    //     if (err) {
+    //         console.error(err)
+    //         return
+    //     }
+    // })
+    // placesMexico = fs.readFileSync('./placesMexico.json');
+    const placeName = req.body.placeName;
+    const city = req.body.city;
+    const state = req.body.state;
+    const description = req.body.description;
+    const imgWide = req.body.imgWide;
+    const imgSquare = req.body.img;
+    const insertPlaceQuery = `INSERT INTO places(place_name, city, state_id, place_description, img, img_wide) VALUES ("${placeName}", "${city}", ${state}, "${description}", "${imgSquare}", "${imgWide}");`;
+    connection.query(insertPlaceQuery, function (error, results, fields) {
+        if (error) throw error;
+        res.redirect('/mexico');
+    });
 })
 
 
@@ -79,7 +90,6 @@ app.get('/mexico/new', (req, res) => {
 app.get('/mexico/:id', (req, res) => {
     // rendering details page showing place name, city, state, description and wide picture
     const place_id = req.params.id;
-    // console.log(place_id);
     const placeQuery = `
     SELECT place_name, city, state_name, place_description, img_wide 
     FROM places 
@@ -88,14 +98,8 @@ app.get('/mexico/:id', (req, res) => {
     connection.query(placeQuery, function (error, results, fields) {
         if (error) throw error;
         const place = results[0];
-        // console.log(place);
-        // console.log(id, place);
-
-        // res.render("destinations.ejs", { place, id })
         res.render("details.ejs", { place, place_id });
     });
-    // let data = placesMexico[id];
-
 })
 
 
