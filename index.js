@@ -46,7 +46,7 @@ app.get('/mexico', (req, res) => {
     // rendering page with a list of all destinations to visit in Mexico - show page with square pictures and names of places
     const allPlacesQuery = "SELECT id, place_name, img FROM places ORDER BY id;";
     // mexico DB > places
-    connection.query(allPlacesQuery, function (error, results, fields) {
+    connection.query(allPlacesQuery, function (error, results) {
         if (error) throw error;
         const allPlaces = results;
         const placesCount = allPlaces.length;
@@ -56,16 +56,7 @@ app.get('/mexico', (req, res) => {
 
 
 app.post('/', (req, res) => {
-    // data from new.ejs form is added to places table (mexico DB)
-
-    // const dataId = (numOfPlaces + 1).toString();
-    // fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
-    //     if (err) {
-    //         console.error(err)
-    //         return
-    //     }
-    // })
-    // placesMexico = fs.readFileSync('./placesMexico.json');
+    // data from new.ejs form is added to places table (mexico DB) > redirect to /mexico
     const placeName = req.body.placeName;
     const city = req.body.city;
     const state = req.body.state;
@@ -73,7 +64,7 @@ app.post('/', (req, res) => {
     const imgWide = req.body.imgWide;
     const imgSquare = req.body.img;
     const insertPlaceQuery = `INSERT INTO places(place_name, city, state_id, place_description, img, img_wide) VALUES ("${placeName}", "${city}", ${state}, "${description}", "${imgSquare}", "${imgWide}");`;
-    connection.query(insertPlaceQuery, function (error, results, fields) {
+    connection.query(insertPlaceQuery, function (error) {
         if (error) throw error;
         res.redirect('/mexico');
     });
@@ -94,7 +85,7 @@ app.get('/mexico/:id', (req, res) => {
     FROM places 
     JOIN states ON places.state_id = states.id 
     WHERE places.id=${place_id};`;
-    connection.query(placeQuery, function (error, results, fields) {
+    connection.query(placeQuery, function (error, results) {
         if (error) throw error;
         const place = results[0];
         res.render("details.ejs", { place, place_id });
@@ -110,7 +101,7 @@ app.get('/mexico/:id/edit', (req, res) => {
     FROM places 
     JOIN states ON places.state_id = states.id 
     WHERE places.id=${place_id};`;
-    connection.query(placeQuery, function (error, results, fields) {
+    connection.query(placeQuery, function (error, results) {
         if (error) throw error;
         const place = results[0];
         res.render("update.ejs", { place, place_id });
@@ -119,61 +110,19 @@ app.get('/mexico/:id/edit', (req, res) => {
 
 
 app.patch('/mexico/:id', (req, res) => {
-    // updating information about given place in placesMexico.json file and redirecting to /mexico
-    const { id } = req.params;
-    let data = placesMexico[id];
-
-    let updatedPlaceName = req.body.placeName;
-    let updatedCity = req.body.city;
+    // updating information about given place in DB and redirecting to /mexico
+    const place_id = req.params.id;
+    let updatedPlaceName = req.body.placeName.trim();
+    let updatedCity = req.body.city.trim();
     let updatedState = req.body.state;
-    let updatedDescription = req.body.description;
-    let updatedImg = req.body.imgWide;
-    let updatedSquareImg = req.body.img;
-
-    if (updatedPlaceName.trim() != data.placeName) {
-        console.log(`Old place name - ${data.placeName}`);
-        data.placeName = updatedPlaceName;
-        console.log(`Updated place name - ${data.placeName}`)
-    };
-
-    if (updatedCity.trim() != data.city) {
-        console.log(`Old city name- ${data.city}`);
-        data.city = updatedCity;
-        console.log(`Updated city name - ${data.city}`)
-    };
-
-    if (updatedState.trim() != data.state) {
-        console.log(`Old state name- ${data.state}`);
-        data.state = updatedState;
-        console.log(`Updated state name - ${data.state}`)
-    };
-
-    if (updatedDescription.trim() != data.description) {
-        console.log(`Old description - ${data.description}`);
-        data.description = updatedDescription;
-        console.log(`Updated description - ${data.description}`);
-    };
-
-    if (updatedImg != data.imgWide) {
-        console.log(`Old img - ${data.imgWide}`);
-        data.imgWide = updatedImg;
-        console.log(`Updated img - ${data.imgWide}`);
-    };
-
-    if (updatedSquareImg != data.img) {
-        console.log(`Old img - ${data.img}`);
-        data.img = updatedSquareImg;
-        console.log(`Updated img - ${data.img}`);
-    };
-
-    fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
-        if (err) {
-            console.error(err)
-            return
-        }
+    let updatedDescription = req.body.description.trim();
+    let updatedImg = req.body.imgWide.trim();
+    let updatedSquareImg = req.body.img.trim();
+    const updatePlaceQuery = `UPDATE places SET place_name="${updatedPlaceName}", city="${updatedCity}", state_id=${updatedState}, place_description="${updatedDescription}", img="${updatedSquareImg}", img_wide="${updatedImg}" WHERE id=${place_id};`;
+    connection.query(updatePlaceQuery, function (error) {
+        if (error) throw error;
+        res.redirect('/mexico');
     })
-    placesMexico = fs.readFileSync('./placesMexico.json');
-    res.redirect('/mexico')
 })
 
 
