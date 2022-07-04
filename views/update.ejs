@@ -6,18 +6,18 @@
 
             <div class="container text-center container-new">
 
-                <!-- Form with Express override method using a query value, fields are pre-populated using data from placesMexico.json file -->
-                <form action="/mexico/<%= id %>?_method=PATCH" method="POST">
-                    <h1 class="text-center pt-5 pb-3 h1-new">Edit <%= location.placeName %>
+                <!-- Modification of new.ejs form - fields are pre-populated using data from places in mexico DB -->
+                <form action="/mexico/<%= place_id %>?_method=PATCH" method="POST">
+                    <h1 class="text-center pt-5 pb-3 h1-new">Edit <%= place.place_name %>
                     </h1>
-                    <a href="/mexico/<%= id %>"
+                    <a href="/mexico/<%= place_id %>"
                         class="justify-content-center link-backToDetails my-4 mx-auto mt-3">Back</a>
                     <div class="row justify-content-md-center">
 
                         <div class="col-md-10 col-xl-8">
                             <div class="input-group input-group-lg mb-3 pt-3">
                                 <span class="input-group-text " id="basic-addon1">Place to visit</span>
-                                <input type="text" class="form-control text-reset" value="<%= location.placeName %>"
+                                <input type="text" class="form-control text-reset" value="<%= place.place_name %>"
                                     aria-label="Place to visit" aria-describedby="basic-addon1" name="placeName">
                             </div>
                         </div>
@@ -25,16 +25,50 @@
                             <div class="input-group input-group-lg pt-3">
                                 <span class="input-group-text">Closest city and state</span>
                                 <input type="text" aria-label="Closest city" class="form-control"
-                                    value="<%= location.city %>" name="city">
-                                <input type="text" aria-label="State" class="form-control" placeholder="Chiapas"
-                                    name="state" value="<%= location.state %>">
+                                    value="<%= place.city %>" name="city">
+                                <select class="form-select form-select-lg " aria-label=".form-select-lg mexico-states"
+                                    name="state">
+                                    <option selected>Select state</option>
+                                    <option value="1">Aguascalientes</option>
+                                    <option value="2">Baja California</option>
+                                    <option value="3">Baja California Sur</option>
+                                    <option value="4">Campeche</option>
+                                    <option value="5">Chiapas</option>
+                                    <option value="6">Chihuahua</option>
+                                    <option value="7">Coahuila</option>
+                                    <option value="8">Colima</option>
+                                    <option value="9">Durango</option>
+                                    <option value="10">Guanajuato</option>
+                                    <option value="11">Guerrero</option>
+                                    <option value="12">Hidalgo</option>
+                                    <option value="13">Jalisco</option>
+                                    <option value="14">México</option>
+                                    <option value="15">Mexico City</option>
+                                    <option value="16">Michoacán</option>
+                                    <option value="17">Morelos</option>
+                                    <option value="18">Nayarit</option>
+                                    <option value="19">Nuevo León</option>
+                                    <option value="20">Oaxaca</option>
+                                    <option value="21">Puebla</option>
+                                    <option value="22">Querétaro</option>
+                                    <option value="23">Quintana Roo</option>
+                                    <option value="24">San Luis Potosí</option>
+                                    <option value="25">Sinaloa</option>
+                                    <option value="26">Sonora</option>
+                                    <option value="27">Tabasco</option>
+                                    <option value="28">Tamaulipas</option>
+                                    <option value="29">Tlaxcala</option>
+                                    <option value="30">Veracruz</option>
+                                    <option value="31">Yucatán</option>
+                                    <option value="32">Zacatecas</option>
+                                </select>
                             </div>
                         </div>
                         <div class="col-md-10 col-xl-8">
                             <div class="input-group input-group-lg pt-3">
                                 <span class="input-group-text">Description</span>
                                 <textarea class="form-control text-update" aria-label="With textarea"
-                                    name="description"><%= location.description %>
+                                    name="description"><%= place.place_description %>
                                 </textarea>
                             </div>
                         </div>
@@ -42,12 +76,12 @@
                             <div class="input-group input-group-lg mb-3 pt-3">
                                 <span class="input-group-text " id="basic-addon1">Image URL</span>
                                 <input type="text" class="form-control" aria-label="Place to visit"
-                                    aria-describedby="basic-addon1" name="imgWide" value="<%= location.imgWide %>">
+                                    aria-describedby="basic-addon1" name="imgWide" value="<%= place.img_wide %>">
                             </div>
                             <div class="input-group input-group-lg mb-3 pt-3">
                                 <span class="input-group-text " id="basic-addon1">Square image URL</span>
                                 <input type="text" class="form-control" aria-label="Place to visit"
-                                    aria-describedby="basic-addon1" name="img" value="<%= location.img %>">
+                                    aria-describedby="basic-addon1" name="img" value="<%= place.img %>">
                             </div>
                         </div>
                     </div>

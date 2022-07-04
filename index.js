@@ -52,14 +52,13 @@ app.get('/mexico', (req, res) => {
         const placesCount = allPlaces.length;
         res.render("destinations.ejs", { allPlaces, placesCount })
     });
-});
+})
 
 
 app.post('/', (req, res) => {
-    // data from new.ejs form allows to change placesMexico.json - new destinations is added to the file with consecutive id number (key)
+    // data from new.ejs form is added to places table (mexico DB)
 
     // const dataId = (numOfPlaces + 1).toString();
-
     // fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
     //     if (err) {
     //         console.error(err)
@@ -82,13 +81,13 @@ app.post('/', (req, res) => {
 
 
 app.get('/mexico/new', (req, res) => {
-    // rendering form to add new destination - after clicking Add New Place button on /mexico
+    // rendering form to add a new destination - after clicking Add New Place button on /mexico
     res.render('new.ejs');
 })
 
 
 app.get('/mexico/:id', (req, res) => {
-    // rendering details page showing place name, city, state, description and wide picture
+    // rendering details page showing place name, city, state, description and a wide picture
     const place_id = req.params.id;
     const placeQuery = `
     SELECT place_name, city, state_name, place_description, img_wide 
@@ -105,9 +104,17 @@ app.get('/mexico/:id', (req, res) => {
 
 app.get('/mexico/:id/edit', (req, res) => {
     // rendering pepopulated form to edit the destination (Images URL must already exist in /public/photos folder)
-    const { id } = req.params;
-    let location = placesMexico[id];
-    res.render('update.ejs', { location, id })
+    const place_id = req.params.id;
+    const placeQuery = `
+    SELECT place_name, city, state_name, place_description, img_wide, img 
+    FROM places 
+    JOIN states ON places.state_id = states.id 
+    WHERE places.id=${place_id};`;
+    connection.query(placeQuery, function (error, results, fields) {
+        if (error) throw error;
+        const place = results[0];
+        res.render("update.ejs", { place, place_id });
+    });
 })
 
 
