@@ -11,15 +11,6 @@ const connection = mysql.createConnection({
     database: 'mexico'
 });
 
-
-const fs = require('fs');
-// placesMexico.json saves all the information about destinations to visit - later will be replaced by a database
-let placesMexico = require('./placesMexico.json');
-// let placesMexicoTest = require('./placesMexicoTest.json');
-
-let listOfPlaces = Object.keys(placesMexico);
-let numOfPlaces = listOfPlaces.length;
-
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, '/views'));
 
@@ -62,6 +53,7 @@ app.post('/', (req, res) => {
     const state = req.body.state;
     const description = req.body.description;
     const imgWide = req.body.imgWide;
+    // (Img URL must already exist in /public/photos folder)
     const imgSquare = req.body.img;
     const insertPlaceQuery = `INSERT INTO places(place_name, city, state_id, place_description, img, img_wide) VALUES ("${placeName}", "${city}", ${state}, "${description}", "${imgSquare}", "${imgWide}");`;
     connection.query(insertPlaceQuery, function (error) {
@@ -127,19 +119,14 @@ app.patch('/mexico/:id', (req, res) => {
 
 
 app.delete('/mexico/:id', (req, res) => {
-    // deleting destination from JSON and redirecting to /mexico
-    const { id } = req.params;
-    console.log(placesMexico[id])
-    delete placesMexico[id];
-    console.log(placesMexico[id])
-    fs.writeFileSync('placesMexico.json', JSON.stringify(placesMexico), err => {
-        if (err) {
-            console.error(err)
-            return
-        }
+    // deleting place from DB and redirecting to /mexico
+    const place_id = req.params.id;
+    const deletePlaceQuery = `DELETE FROM places WHERE id=${place_id}`
+    console.log(deletePlaceQuery);
+    connection.query(deletePlaceQuery, function (error) {
+        if (error) throw error;
+        res.redirect('/mexico');
     })
-    placesMexico = fs.readFileSync('./placesMexico.json');
-    res.redirect('/mexico')
 })
 
 app.listen(8080, () => {

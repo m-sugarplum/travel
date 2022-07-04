@@ -22,5 +22,5 @@
 --     img VARCHAR(255),
 --     img_wide VARCHAR(255),
 --     created_at TIMESTAMP DEFAULT NOW(),
---     FOREIGN KEY(state_id) REFERENCES states(id) ON DELETE CASCADE
+--     FOREIGN KEY(state_id) REFERENCES states(id)
 -- );
