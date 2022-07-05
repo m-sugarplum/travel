@@ -129,6 +129,7 @@ app.delete('/mexico/:id', (req, res) => {
     })
 })
 
-app.listen(8080, () => {
-    console.log("Travel app on port 8080!")
+
+app.listen(3000, () => {
+    console.log("Travel app on port 3000!")
 })
