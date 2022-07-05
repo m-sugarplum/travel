@@ -85,9 +85,11 @@ body {
 .jumbotron {
     background-color: #1b1e18;
     background-size: cover;
-    background-position: bottom;
+    /* background-position: 50% 90%; */
+    background-position: top;
     background-repeat: no-repeat;
-    background-image: url("/photos/clay.jpg");
+    background-image: url("/photos/backgrounds/bground7-bottom.jpg");
+
 }
 
 .add-place {
@@ -150,7 +152,7 @@ a:hover {
 
 .location-svg {
     transform: scale(2.5);
-    color: #7b8371;
+    color: #c5c4c1;
 }
 
 .container-destinations {
@@ -163,9 +165,9 @@ a:hover {
 }
 
 .location-text {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     font-family: 'Grape Nuts';
-    color: #497c49;
+    color: #c5c4c1;
 }
 
 .h1-home {
@@ -272,7 +274,11 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 13em;
+        height: 10em;
+    }
+
+    .location-text {
+        font-size: 2rem;
     }
 
     .add-place {
@@ -295,7 +301,11 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 15em;
+        height: 10em;
+    }
+
+    .location-text {
+        font-size: 2.5rem;
     }
 
     .add-place {
@@ -326,7 +336,13 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 20em;
+        height: 10em;
+        background-image: url("/photos/backgrounds/bground8-cropped.jpg");
+
+    }
+
+    .location-text {
+        font-size: 3rem;
     }
 
     .link-backToDetails {
@@ -367,6 +383,10 @@ input::placeholder {
     .contact {
         max-width: 30%;
     }
+
+    .location-text {
+        font-size: 3.5rem;
+    }
 }
 
 @media (min-width: 1401px) {
@@ -379,6 +399,10 @@ input::placeholder {
     }
 
     .jumbotron {
-        height: 20em;
+        height: 10em;
+    }
+
+    .location-text {
+        font-size: 4rem;
     }
 }
