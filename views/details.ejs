@@ -28,31 +28,31 @@
             </div>
 
             <div class="container">
-                <div class="row justify-content-center align-items- center text-center">
+                <div class="row justify-content-center align-items- center text-center m-sm-3">
                     <!-- Link styled as a button - to form where destination can be edited -->
                     <a href="/mexico/<%= place_id %>/edit"
-                        class="btn btn-lg btn-outline-success text-nowrap col-6 col-sm-4 col-xl-2 m-1 m-md-3 m-l-4 link-edit">
+                        class="btn btn-lg btn-outline-success text-nowrap col-8 mt-4 mb-2 m-sm-3 p-sm-2 col-sm-6 col-md-4 col-xl-2 m-md-3 m-l-4 link-edit">
                         Edit Destination
                     </a>
                     <!-- Link styled as a button - to go back to a list of destinations (/mexico) -->
                     <a href="/mexico"
-                        class="btn btn-lg btn-outline-secondary text-nowrap col-6 col-sm-4 col-xl-2 m-1 m-md-3 m-l-4 link-backToMexico">
+                        class="btn btn-lg btn-outline-secondary text-nowrap col-8 mb-4 mt-2 m-sm-3 p-sm-2 col-sm-6 col-md-4 col-xl-2 m-md-3 m-l-4 link-backToMexico">
                         Back to Destinations
                     </a>
                 </div>
 
-                <div class="row align-items-center">
-                    <div class="col-sm-12 col-xxl-6">
+                <div class="row align-items-center ">
+                    <div class="col-sm-12 col-xxl-6 p-0 my-lg-3">
                         <!-- Wide picture of a desrtination (from public/photos) -->
                         <% if (place.img_wide) { %>
-                            <img class="img-fluid mb-xl-4 mx-md-5 img-wide" src="<%=place.img_wide%>" alt="">
+                            <img class="img-fluid mb-xl-2 mx-md-2 mx-lg-0 img-wide" src="<%=place.img_wide%>" alt="">
                             <%}%>
                     </div>
 
                     <div class="col">
-                        <div class="m-5 text-center">
+                        <div class="my-3 m-sm-5 text-center text-xxl-start ">
                             <!-- Place description -->
-                            <h2 class="description-text">
+                            <h2 class="description-text fs-5">
                                 <%= place.place_description%>
                             </h2>
                         </div>
@@ -61,7 +61,7 @@
                 <div class="d-flex justify-content-center">
                     <form class="d-flex " action="/mexico/<%= place_id %>?_method=DELETE" method="POST">
                         <!-- Button to delete destination -->
-                        <button class="btn btn-outline-danger btn-delete m-3">Delete Destination</button>
+                        <button class="btn btn-outline-danger btn-delete m-3 mt-lg-5">Delete Destination</button>
                     </form>
                 </div>
 
