@@ -8,7 +8,8 @@ const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: password,
-    database: 'mexico'
+    database: 'mexico',
+    port: 3306
 });
 
 app.set('view engine', 'ejs');
@@ -130,6 +131,6 @@ app.delete('/mexico/:id', (req, res) => {
 })
 
 
-app.listen(3000, () => {
-    console.log("Travel app on port 3000!")
+app.listen(8080, () => {
+    console.log("Travel app on port 8080!")
 })
